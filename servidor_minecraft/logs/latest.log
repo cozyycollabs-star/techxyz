@@ -1,0 +1,112 @@
+[17:27:41] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.8+9-Ubuntu-0ubuntu124.04.1; Ubuntu null) on Linux 6.8.0-1030-azure (amd64)
+[17:27:41] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.8-6-main@782ce95 (2025-07-18T20:26:58Z) for Minecraft 1.21.8
+[17:27:41] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[17:27:44] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: java.lang.IllegalArgumentException: Directory 'plugins/.paper-remapped/grimac-fabric-2.3.72-12e79a1.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+java.lang.RuntimeException: java.lang.IllegalArgumentException: Directory 'plugins/.paper-remapped/grimac-fabric-2.3.72-12e79a1.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:85) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:52) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:17) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:15) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.Main.main(Main.java:112) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.Main.main(Main.java:242) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Directory 'plugins/.paper-remapped/grimac-fabric-2.3.72-12e79a1.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	... 10 more
+[17:27:44] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
+[17:27:44] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
+ - DeluxeHub (3.6.4), DiscordSRV (1.30.1), PlaceholderAPI (2.11.6), Vault (1.7.3-b131), ViaBackwards (5.5.1-SNAPSHOT), ViaVersion (5.5.1-SNAPSHOT)
+[17:27:50] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:27:53] [ServerMain/INFO]: Loaded 1407 recipes
+[17:27:53] [ServerMain/INFO]: Loaded 1520 advancements
+[17:27:53] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[17:27:53] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 497.2ms
+[17:27:53] [Server thread/INFO]: Starting minecraft server version 1.21.8
+[17:27:53] [Server thread/INFO]: Loading properties
+[17:27:53] [Server thread/INFO]: This server is running Paper version 1.21.8-6-main@782ce95 (2025-07-18T20:26:58Z) (Implementing API version 1.21.8-R0.1-SNAPSHOT)
+[17:27:54] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[17:27:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:27:54] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:27:55] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[17:27:55] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[17:27:55] [Server thread/INFO]: Default game type: SURVIVAL
+[17:27:55] [Server thread/INFO]: Generating keypair
+[17:27:55] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:27:55] [Server thread/INFO]: Using epoll channel type
+[17:27:55] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[17:27:55] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[17:27:56] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.1-SNAPSHOT
+[17:27:56] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[17:27:57] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[17:27:57] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[17:27:58] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[17:27:58] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[17:27:58] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[17:27:58] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[17:27:58] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.5.1-SNAPSHOT
+[17:27:58] [Server thread/INFO]: [DiscordSRV] Loading server plugin DiscordSRV v1.30.1
+[17:27:58] [Server thread/INFO]: [DeluxeHub] Loading server plugin DeluxeHub v3.6.4
+[17:27:58] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:27:58] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[17:27:58] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[17:27:58] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[17:27:58] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:27:58] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:27:58] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:27:58] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:27:58] [Server thread/INFO]: Preparing level "world"
+[17:27:59] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:28:00] [Server thread/INFO]: Preparing spawn area: 0%
+[17:28:00] [Server thread/INFO]: Preparing spawn area: 0%
+[17:28:00] [Server thread/INFO]: Preparing spawn area: 0%
+[17:28:01] [Server thread/INFO]: Preparing spawn area: 34%
+[17:28:01] [Server thread/INFO]: Time elapsed: 1887 ms
+[17:28:01] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:28:01] [Server thread/INFO]: Preparing spawn area: 0%
+[17:28:01] [Server thread/INFO]: Time elapsed: 365 ms
+[17:28:01] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:28:01] [Server thread/INFO]: Preparing spawn area: 0%
+[17:28:01] [Server thread/INFO]: Time elapsed: 231 ms
+[17:28:01] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1-SNAPSHOT
+[17:28:01] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.7-1.21.8 (772)
+[17:28:01] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[17:28:02] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[17:28:02] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.1-SNAPSHOT
+[17:28:02] [Server thread/INFO]: [DiscordSRV] Enabling DiscordSRV v1.30.1
+[17:28:02] [Server thread/INFO]: [DeluxeHub] Enabling DeluxeHub v3.6.4
+[17:28:02] [Server thread/INFO]: [DeluxeHub]  _   _            _          _    _ 
+[17:28:02] [Server thread/INFO]: [DeluxeHub] | \ |_ |  | | \/ |_ |_| | | |_)   _)
+[17:28:02] [Server thread/INFO]: [DeluxeHub] |_/ |_ |_ |_| /\ |_ | | |_| |_)   _)
+[17:28:02] [Server thread/INFO]: [DeluxeHub] 
+[17:28:02] [Server thread/INFO]: [DeluxeHub] Version: 3.6.4
+[17:28:02] [Server thread/INFO]: [DeluxeHub] Author: ItsLewizzz
+[17:28:02] [Server thread/INFO]: [DeluxeHub] 
+[17:28:02] [Server thread/INFO]: [DeluxeHub]  Hooked into PlaceholderAPI
+[17:28:02] [Server thread/INFO]: [DeluxeHub] Loaded custom menu 'serverselector'.
+[17:28:02] [DiscordSRV - Initialization/ERROR]: [DiscordSRV] No bot token has been set in the config; a bot token is required to connect to Discord.
+[17:28:03] [Server thread/WARN]: [DeluxeHub] Inventory with name 'serverselector.yml' already exists, skipping duplicate..
+[17:28:03] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.8! Trying to find NMS support
+[17:28:03] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R5' loaded!
+[17:28:03] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DeluxeHub' to create a bStats instance!
+[17:28:03] [pool-16-thread-1/INFO]: [DiscordSRV] DiscordSRV is up-to-date. (1cc66c00dd0d091057d8a04adf1cc0714d8391ad)
+[17:28:03] [Server thread/INFO]: [DeluxeHub] Loaded 17 plugin modules.
+[17:28:03] [Server thread/INFO]: [DeluxeHub] 
+[17:28:03] [Server thread/INFO]: [DeluxeHub] Successfully loaded in 1400ms
+[17:28:04] [Server thread/INFO]: [spark] Starting background profiler...
+[17:28:04] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[17:28:04] [Server thread/INFO]: Done preparing level "world" (5.917s)
+[17:28:04] [Server thread/INFO]: Running delayed init tasks
+[17:28:04] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[17:28:04] [Server thread/INFO]: [DiscordSRV] Disabling DiscordSRV v1.30.1
+[17:28:04] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion vault due to an unknown issue.
+[17:28:04] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[17:28:04] [Server thread/INFO]: Done (24.765s)! For help, type "help"
+[17:28:04] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] Checking for Updates ... 
+[17:28:04] [Server thread/INFO]: Unknown or incomplete command, see below for error
+1<--[HERE]
+[17:28:04] [Server thread/INFO]: Unknown or incomplete command, see below for error
+1<--[HERE]
+[17:28:04] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
+[17:28:04] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] No new version available
